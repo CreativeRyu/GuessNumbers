@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        GuessNumbers
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="GuessNumbers.css" media="screen" />
+    <script src="GuessNumbers.js"></script>
+</head>
+
+<body style="background:#c7c7c7">
+    <div class="gameWindow" onclick="startGuessNumbers();">
+        <p id="Frage" style="font-size: 40px">Zahlen Raten</p>
+        <p id="gameText">Press Start</p>
+        <p id="additionalGameText"></p>
+
+    </div>
+
+    <div class="center">
+        <form onsubmit="return checkInput();">
+            <!-- Eingabefeld -->
+            <input id="input" class="inputWindow" type="text">
+        </form>
+    </div>
+
+</body>
+
+</html>
